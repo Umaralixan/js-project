@@ -8,7 +8,40 @@
     <style type="text/tailwindcss"></style>
   </head>
   <body>
+    <header class="py-[20px] shadow-md">
+      <div class="container flex item-center justify-between">
+        <h1 class="font-bold text-[25px]">Countires</h1>
+        <div class="flex item-center gap-[30px]">
+          <button>❤️ <span>0</span></button>
+          <button>☑️ <span>0</span></button>
+          <button>🌟 <span>0</span></button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="py-[40px]">
+        <div class="container">
+          <div class="flex item-center justify-between">
+            <input
+              class="border-[1px] width-[200px] py-[5px] rounded-[5px] pl-[10px]"
+              type="text"
+              placeholder="Searching..."
+            />
+            <select
+              class="country-selct border-[1px] w-[200px] py-[5px] rounded-[5px] pl-[10px]"
+            >
+              <option class="" disabled selected value="all">All</option>
+            </select>
+          </div>
+          <ul class="country-list flex item-center justify-between flex-wrap gap-[20px]">
+           
+          </ul>
+        </div>
+      </section>
+    </main>
+
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="./countires.js"></script>
     <script src="./script.js"></script>
   </body>
 </html>
