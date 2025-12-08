@@ -2,23 +2,23 @@ let elCountryList = document.querySelector(".country-list");
 let elCountrySelect = document.querySelector(".country-select");
 
 // Select part start
-// function renderSelectOptions(arr, list){
-//     let countryRes = arr.reduce((prevValue, item) => {
-//         if(!prevValue.includes(item.region)){
-//             prevValue.push(item.region)
-//         }
-//         return prevValue
-//     },[])
+function renderSelectOptions(arr, list){
+    let countryRes = arr.reduce((prevValue, item) => {
+        if(!prevValue.includes(item.region)){
+            prevValue.push(item.region)
+        }
+        return prevValue
+    },[])
 
-//     countryRes.forEach(item => {
-//         let elOption = document.createElement("option")
-//         elOption.text = item
-//         elOption.value = item.toLowerCase()
-//         list.appendChild(elOption)
-//     })
+    countryRes.forEach(item => {
+        let elOption = document.createElement("option")
+        elOption.textContent = item
+        elOption.value = item.toLowerCase()
+        list.appendChild(elOption)
+    })
 
-// }
-// renderSelectOptions(countries, elCountrySelect)
+}
+renderSelectOptions(countries, elCountrySelect)
 // Select part end  
 
 
